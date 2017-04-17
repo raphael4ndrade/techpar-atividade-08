@@ -1,0 +1,26 @@
+{
+  "name": "techpar-atividade-06",
+  "version": "1.0.0",
+  "description": "Atividade 6",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "keywords": [
+    "javascript",
+    "nodejs",
+    "express",
+    "knex"
+  ],
+  "author": "raphael4ndrade",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "knex": "^0.12.9",
+    "sqlite3": "^3.1.8"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
