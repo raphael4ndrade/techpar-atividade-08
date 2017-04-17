@@ -1,10 +1,9 @@
-# techpar-atividade-07
-- pegar o projeto app-cliente, criado na atividade 05, e adicionar suporte a budo e browserify
-  o budo deve substituir o http-server no script dev
-- um novo script deve ser criado, o build
-- "npm run build" deve disparar a contrução do projeto com browserify
-  os controllers e os services angular criados agora deve fazer uso de exports/require para montar suas dependências
-- estudar uma boa abordagem de modularização e aplicar
-- estudar o browserify handbook que o substack, criador do browserify, escreveu
-- o nome do bundle deve ser build.js
-***prazo de 16h para entrega**
+# Atividade 08
+- reescrever o app-cliente em vuejs
+- transformar os controllers em components
+- transformar o módulo angular uma instância do vue viel-model
+- transformar a configuração do angular router em vue-router
+- fazer uso dos componentes .vue em vez de um html e um js separados
+- usar o axios em vez do $http do angular
+- todo o resto deve ser similar à atividade 07
+***prazo de 24h para entrega***

@@ -1,7 +1,7 @@
 {
-  "name": "techpar-atividade-06",
+  "name": "techpar-atividade-08",
   "version": "1.0.0",
-  "description": "Atividade 6",
+  "description": "Atividade 8",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon"
