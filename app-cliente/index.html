@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="webapp">
+<html lang="en">
 
 <head>
-    <title>TECHPAR - Atividade 5</title>
+    <title>TECHPAR - Atividade 8 (VueJs App)</title>
     <meta charset="UTF-8">
 </head>
 
-<body>
-    <!--little trick to make it run... added '!' before '/' -->
-    <a href="#!/list">LISTAR</a>
-    <a href="#!/save">ADICIONAR</a>
+<body id="app">
+    <a href="#/list">LISTAR</a>
+    <a href="#/save">ADICIONAR</a>
     <hr>
     <div ng-view></div>
 
-<script src="./build.js"></script>    
+    <script src="./build.js"></script>
 </body>
+
 </html>

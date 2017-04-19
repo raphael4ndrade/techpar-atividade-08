@@ -11,8 +11,9 @@
   "author": "raphel4ndrade",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.6.4",
-    "angular-route": "^1.6.4"
+    "axios": "^0.16.1",
+    "vue": "^2.2.6",
+    "vue-router": "^2.4.0"
   },
   "devDependencies": {
     "browserify": "^14.3.0",

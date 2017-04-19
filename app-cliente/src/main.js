@@ -1,22 +1,7 @@
-let angular = require("angular");
+const Vue = require('vue');
 
-require('angular-route')
+const appcore = require('./components/approuter');
 
-let app = angular.module("webapp", ['ngRoute']);
-
-require('./controllers');
-require('./services');
-
-app.config(($routeProvider) => {
-    $routeProvider.when("/list", {
-        controller : "toListController",
-        templateUrl : "templates/list.html",
-        controllerAs: "ctrl"
-    })
-    .when("/save", {
-        controller : "toSaveController",
-        templateUrl: "templates/save.html",
-        controllerAs : "ctrl"
-    })
-    .otherwise('/save');
-});
+const appInit = () => new Vue({
+    router : appcore.router
+}).$mount('#app');
