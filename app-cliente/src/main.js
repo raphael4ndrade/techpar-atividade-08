@@ -1,7 +1,10 @@
 const Vue = require('vue');
 
-const appcore = require('./components/approuter');
+const approuter = require('./components/approuter').router;
 
-const appInit = () => new Vue({
-    router : appcore.router
+new Vue({
+    router : approuter,
+    render : function(createElement){
+        return createElement(require('./features/listar.vue'));
+    }
 }).$mount('#app');

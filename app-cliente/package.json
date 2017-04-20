@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify src/main.js -o build.js",
+    "build": "browserify -t vueify -e src/main.js -o build.js",
     "dev": "budo src/main.js:build.js --live --open"
   },
   "author": "raphel4ndrade",
@@ -17,6 +16,7 @@
   },
   "devDependencies": {
     "browserify": "^14.3.0",
-    "budo": "^9.4.7"
+    "budo": "^9.4.7",
+    "vueify": "^9.4.1"
   }
 }

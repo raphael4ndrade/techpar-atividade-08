@@ -6,11 +6,15 @@
     <meta charset="UTF-8">
 </head>
 
-<body id="app">
-    <a href="#/list">LISTAR</a>
-    <a href="#/save">ADICIONAR</a>
-    <hr>
-    <div ng-view></div>
+<body>
+    <div id="app">
+        <router-link to="/listar">LISTAR</router-link>
+        <router-link to="/salvar">SALVAR</router-link>
+    <!--<a href="/list">LISTAR</a>
+    <a href="/save">ADICIONAR</a>-->
+    
+    </div>
+    
 
     <script src="./build.js"></script>
 </body>

@@ -6,9 +6,8 @@ let api = axios.create({
     baseURL: serviceaddr
 });
 
-const list = () => api.get("/list");
-
-const save = (data) => api.post("/save", data);
+const list = () => api.get(serviceaddr + "/list");
+const save = (data) => api.post(serviceaddr + "/save", data);
 
 exports.serviceaddr = serviceaddr;
 exports.list = list;
