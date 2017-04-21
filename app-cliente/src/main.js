@@ -1,12 +1,12 @@
+
 const Vue = require('vue');
 
-const approuter = require('./components/approuter');
+new Vue({
+    el: "#app",
+    router: require('./components/approuter').router,
+    render: (r) => r(require("./features/home.vue"))
+});
 
-const appInit = () => {
-    new Vue({
-        router: approuter.router,
-        render: (homepage) => homepage(require("./features/home.vue"))
-    }).$mount('#app');
-};
-
-let vm = appInit();
+// como o package.json não aceita comentários,
+// posto que temos a seção browserify nele, não precisamos indicar 
+// os transforms a aplicar. o browserify pegará de lá

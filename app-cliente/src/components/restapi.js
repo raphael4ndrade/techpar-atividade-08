@@ -1,17 +1,13 @@
 // restapi.js
 const axios = require('axios');
-const serviceaddr = 'http://127.0.0.1';
+const serviceaddr = process.env.SERVICOADDR || 'http://127.0.0.1:3000';
 
 let api = axios.create({
-    baseURL: serviceaddr,
-    headers : {'Access-Control-Allow-Origin': '*' },
-    timeout : 5000
+    baseURL: serviceaddr
 });
 
-// api.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
-
-const list = () => api.get(serviceaddr + "/list");
-const save = (data) => api.post(serviceaddr + "/save", data);
+const list = () => api.get("/list");
+const save = (data) => api.post("/save", data);
 
 exports.serviceaddr = serviceaddr;
 exports.list = list;

@@ -1,9 +1,8 @@
-let Vue = require('vue');
-let VueRouter = require('vue-router');
+
+const Vue = require('vue');
+const VueRouter = require('vue-router');
 
 Vue.use(VueRouter);
-
-const home = { template: '<div>HELLOOOO!!</div>' };
 
 const router = new VueRouter({
   routes: [
@@ -13,6 +12,5 @@ const router = new VueRouter({
   ]
 });
 
-module.exports = {
-  router
-};
+// pra ganhar uma linha tava errado não hehehehe
+exports.router = router;
