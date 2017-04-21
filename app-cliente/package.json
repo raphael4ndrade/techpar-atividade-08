@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -t vueify -e src/main.js -o build.js",
+    "build": "browserify src/main.js -o build.js",
     "dev": "cross-env SERVICOADDR=http://127.0.0.1:3000 budo src/main.js:build.js -o -l"
   },
   "author": "raphel4ndrade",

@@ -18,9 +18,12 @@ app.use((req, res, next) => {
 
 app.get('/list', (req, res) => {
   knex("pessoa").select().then((ret) => {
-    res.send(ret).status(204);
+    res.send(ret) // o status default é o 200 e ele é lindo
     console.log("Accessing /list, retriving data ...");
-  })
+  }).catch((err) => {
+    console.log(err);
+    res.send().status(500);
+  });
 });
 
 app.post('/save', (req, res) => {
@@ -29,7 +32,7 @@ app.post('/save', (req, res) => {
   knex("pessoa").insert(pessoa, 'id_pessoa')
     .then((ret) => {
       pessoa.id_pessoa = ret[0];
-      res.send(pessoa).status(204);
+      res.send(pessoa)
     }).catch((err) => {
       console.log(err);
       res.send().status(500);
